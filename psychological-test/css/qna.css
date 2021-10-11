@@ -43,3 +43,16 @@
 .answerBox button:active{
     transform: scale(0.95);
 }
+
+.status {
+    height: 20px;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.statusBar {
+    height: 100%;
+    background: var(--main-bg-color);
+    border-radius: 20px;
+}
