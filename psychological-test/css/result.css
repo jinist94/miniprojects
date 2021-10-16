@@ -6,28 +6,37 @@
     width: 100%;
     height: 100%;
     background-color: #fffbfb;
-    border-radius: 17px;
-    margin-top: 20px;
+
     padding: 40px;
     box-sizing: border-box;
+}
+
+#result h3{
+    display: block;
+    font-size: 23px;
+    margin-bottom: 20px;
 }
 
 #result button{
     display: block;
     font-size: 18px;
-    color: #fff;
-    background-color: var(--main-bg-color);
+    color: #000;
+    background-color: #f9e000;
     width: 100%;
     padding: 20px 0px;
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 3px 5px 5px #5858583d;
+    box-shadow: 3px 5px 5px #dddddd;
+    font-weight: bold;
 }
 
 #resultImg img{
     width: 300px;
 }
 
+.resultName{
+    font-size: 22px;
+}
 .resultDesc{
     margin: 30px 0;
     line-height: 24px;

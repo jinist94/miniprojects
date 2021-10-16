@@ -5,7 +5,7 @@ function sendLink() {
         title: 'https://lovetype-jt.netlify.app',
         description: '간단한 테스트를 통한 나의 연애유형을 알아보자!',
         imageUrl:
-          'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+          './img/kakao-share-img',
         link: {
           mobileWebUrl: 'https://lovetype-jt.netlify.app',
           webUrl: 'https://lovetype-jt.netlify.app',
