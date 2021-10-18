@@ -2,13 +2,13 @@ function sendLink() {
     Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
-        title: '딸기 치즈 케익',
-        description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+        title: '돼지력 테스트',
+        description: '나의 숨겨진 돼지력을 테스트 해보자',
         imageUrl:
-          'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+          './img/kakao-share-img.png',
         link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com',
+          mobileWebUrl: 'https://angry-northcutt-a37387.netlify.app/',
+          webUrl: 'https://angry-northcutt-a37387.netlify.app/',
         },
       },
       social: {

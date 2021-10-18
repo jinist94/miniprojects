@@ -9,10 +9,10 @@
     <meta name="description" content="돼지력 테스트">
     
     <!-- SNS Share-->
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="https://angry-northcutt-a37387.netlify.app/" />
     <meta property="og:title" content="돼지력 테스트" />
     <meta property="og:type" content="website" />
-    <meta property="og:img" content="" />
+    <meta property="og:img" content="./img/kakao-share-img.png" />
     <meta property="og:description" content="나의 숨겨진 돼지력을 테스트 해보자" />
 
     <title>돼지력 테스트</title>
@@ -25,7 +25,7 @@
     
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
-        Kakao.init('9be265e9d5eb30a09af02c598cceb95a');
+        Kakao.init('de22d7e6d716c380a5140b10f9e0f617');
         Kakao.isInitialized();
     </script>
 
@@ -38,13 +38,15 @@
                 <p>사진 속 음식은 무엇일까요?</p>
                 <h3>돼지력 테스트</h3>
             </div>
-            <img class="mainImg" src="img/main-picture.png" alt="mainImge">
+            <div class="mainImgArea">
+                <img class="rotateImg" src="./img/main-magnifier.png">
+                <img class="mainImg" src="./img/main-picture.png" alt="mainImge">
+            </div>
             <div class="sticker">
                 <img src="./img/main-pig.png">
             
             <button onclick="js:begin()">테스트 시작하기</button>
             </div>
-            <!-- <button onclick="js:sendLink()">공유하기</button> -->
         </section>
         <section id="qna">
             <div class="qna-wrap">
@@ -74,8 +76,8 @@
                 <p></p>
             </div>
             
-            <button class="shareBt">친구들에게 공유하기</button>
-            <button class="refBtn" onclick="location.reload()">다시하기</button>
+            <button class="shareBt" onclick="js:sendLink()"><img src="./img/icon-share.png"> 친구들에게 공유하기</button>
+            <button class="refBtn" onclick="location.reload()"><img src="./img/icon-refresh.png"> 다시하기</button>
         </section>
         <script src="./js/data.js" charset="utf-8"></script>
         <script src="./js/start.js" charset="utf-8"></script>

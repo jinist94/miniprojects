@@ -12,7 +12,6 @@ let correctAnswer = ["치킨","라면","족발","비빔밥","백숙","잡채","�
 let userAnswer = [];
 let corCount=0;
 
-console.log(infoList[0].name)
 
 function goResult(){
 
@@ -82,9 +81,16 @@ function goNext(qIdx){
     }
     let q = document.querySelector(".qBox");
     let qImg = q.querySelector("img");
+    q.classList.remove("rightIn");
+    anForm.classList.remove("rightIn");
+    passBtn.classList.remove("rightIn");
+    setTimeout(() => {
+        q.classList.add("rightIn");
+        anForm.classList.add("rightIn");
+        passBtn.classList.add("rightIn");
+        qImg.src=`./img/q-img-${qIdx}.jpg`;
+    }, 100);
 
-    qImg.src=`./img/q-img-${qIdx}.jpg`;
-    
     anForm.addEventListener("submit", handleSubmit);
     passBtn.addEventListener("click", handlePassBtn);
 

@@ -19,6 +19,21 @@ body{
     background-color: #ffe3e2;
     background: url("../img/main-patten.png") repeat;
 }
+
+.container{
+    margin:0 auto;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    text-align: center;
+
+}
+.fixed {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 #main{
     display: flex;
     flex-direction: column;
@@ -40,14 +55,31 @@ body{
 #main button{
     width: 80%;
     padding: 30px 0;
-    background-color: #000;
+    background-color: #41535a;;
+    border: 5px solid #000;
     border-radius: 10px;
     color:#fff;
     font-size: 18px;
     box-shadow: 3px 5px 5px #5858583d;
 }
-#main .mainImg{
+#main button:hover{
+    background-color: #f34545;
+}
+
+#main .mainImgArea{
+    position: relative;
+}
+
+#main .mainImgArea .mainImg{
     width: 80%;
+}
+#main .mainImgArea .rotateImg{
+    position: absolute;
+    bottom: 4px;
+    left: 80px;
+    width: 44%;
+    transform-origin: bottom left;
+    animation: rotate 2s infinite;
 }
 
 #main .sticker{
@@ -57,23 +89,10 @@ body{
 #main .sticker img{
     position: absolute;
     right: 10%;
-    bottom: 50px;
+    bottom: 55px;
     width: 25%;
 }
-.container{
-    margin:0 auto;
-    width: 100%;
-    max-width: 600px;
-    min-width: 450px;
-    height: 100%;
-    text-align: center;
 
-}
-.fixed {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
 
 
 :root{
@@ -88,7 +107,30 @@ body{
         font-size: 50px;
     }
     #main .sticker img {
-        bottom: 60px;
+        bottom: 65px;
     }
 
 }
+
+@media all and (max-width:350px) {
+    #main h3 {
+        font-size: 50px;
+    }
+    #main .sticker img {
+        display: none;
+    }
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+  
+    50% {
+        transform: rotate(11deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+  }

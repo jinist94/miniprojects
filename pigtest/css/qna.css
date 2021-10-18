@@ -14,12 +14,17 @@
     width: 80%;
     height: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .qBox{
     font-size: 22px;
     width: 100%;
     line-height: 35px;
+}
+.rightIn{
+    animation-name: rightIn;
+    animation-duration: 0.3s;
 }
 .qBox p{
     font-size: 25px;
@@ -40,6 +45,7 @@
 .answerForm {
     width: 100%;
     position: relative;
+    animation-duration: 0.4s;
 }
 
 .answerForm input[type='text']{
@@ -108,4 +114,15 @@
     border: 5px solid #000;
     border-radius: 15px;
     font-family: inherit;
+    animation-duration: 0.5s;
+}
+
+
+@keyframes rightIn{
+    0%{
+        transform: translateX(110%);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
